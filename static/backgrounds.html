@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="assets/favicon.svg" />
+        <link rel="stylesheet" href="%public_url%/style.css" />
+        <script src="%public_url%/learning-slides.bundle.js"></script>
+    </head>
+    <body class="slides invisible" data-title="Code Examples with Syntax Highlighting" tabindex="0">
+        <header>
+            <h2>Table of Contents</h2>
+            <p>
+                This presentation shows just what kind of backgrounds can
+                be used for a slide.
+            </p>
+        </header>
+
+        <section>
+            <h1>No Background</h1>
+            <article>
+                <ul>
+                    <li>By default slides have no background color by themselves.</li>
+                    <li>The background is determined by the presentation theme.</li>
+                    <li>Since this slides use the white theme, the background is … white</li>
+                </ul>
+            </article>
+        </section>
+
+        <section data-background-color="rgb(197, 212, 232)">
+            <h1>Background Color</h1>
+            <article>
+                <ul>
+                    <li>
+                        Background colors can be used with
+                        <src-code language="html">data-background-color="..."</src-code>
+                    </li>
+                    <li>
+                        Everything that works with the CSS
+                        <src-code language="css">background-color</src-code>
+                        setting is allowed.
+                    </li>
+                    <li>
+                        This slide uses an rgb()-code like this:
+                        <src-code language="css">rgb(197, 212, 232)</src-code>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section data-background="linear-gradient(to bottom, #e1ffff 0%, #b1d8f5 100%)">
+            <h1>Background Gradient</h1>
+            <article>
+                <ul>
+                    <li>
+                        Gradients and other fancy backgrounds can be used with
+                        <src-code language="html">data-background="..."</src-code>
+                    </li>
+                    <li>
+                        Everything that works with the CSS
+                        <src-code language="css">background</src-code>
+                        setting is allowed.
+                    </li>
+                    <li>
+                        This slide has a blue gradient:
+                        <src-code language="css">linear-gradient(to bottom, #e1ffff 0%, #b1d8f5 100%)</src-code>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section data-background-image="assets/background-image.jpg">
+            <h1>Background Images 1</h1>
+            <article style="color: white">
+                <ul>
+                    <li>
+                        Background images can be used with
+                        <src-code language="html">data-background-image="..."</src-code>
+                    </li>
+                    <li>The image can either be a file or a remote URL</li>
+                    <li>The image always covers the complete page background</li>
+                    <li>Make sure that the image has a small file size and loads fast</li>
+                </ul>
+            </article>
+        </section>
+
+        <section data-background-image="assets/background-image.jpg">
+            <h1>Background Images 2</h1>
+            <article style="color: white">
+                <ul>
+                    <li>The background doesn't only cover just the slide content.</li>
+                    <li>It also covers the explanations at the side</li>
+                    <li>The background must therefor be carefully chosen</li>
+                </ul>
+            </article>
+            <aside style="color: white">
+                <p>
+                    As you can see, the background also covers the explanations
+                    next to the slide. Therefor make sure that your background
+                    guarantees a high reading contrast at every place. Test it
+                    with as many screen sizes as you can, if it doesn't.
+                </p>
+            </aside>
+        </section>
+    </body>
+</html>
