@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="assets/favicon.svg" />
+        <link rel="stylesheet" href="%public_url%/style.css" />
+        <script src="%public_url%/learning-slides.bundle.js"></script>
+    </head>
+    <body class="slides invisible" data-title="Structuring Decks with Chapters and Captions" tabindex="0">
+        <header>
+            <h2>Table of Contents</h2>
+            <p>
+                This presentation shows how a large deck can be clearly structured
+                with chapters and slide captions.
+            </p>
+        </header>
+
+        <!--
+            ===========
+            FRONT MATER
+            ===========
+        -->
+        <section data-chapter data-background-image="https://picsum.photos/1600/900?image=1081">
+            <h1>Front Matter</h1>
+            <slide-caption>
+                Welcome learners. Please take your time to read these introductory
+                slides in order to get started quickly. If you have any questions
+                please raise your hands during the first meetup.
+            </slide-caption>
+        </section>
+
+        <section>
+            <h1>Syllabus</h1>
+            <article>
+                This is just a place holder. <br />
+                See the last chapter for explanations.
+            </article>
+            <aside>
+                This is not the slide you're looking for.
+            </aside>
+        </section>
+
+        <section>
+            <h1>Weekly Meetups and Tutored Exercises</h1>
+            <article>
+                This is just a place holder. <br />
+                See the last chapter for explanations.
+            </article>
+            <aside>
+                This isn't it either.
+            </aside>
+        </section>
+
+        <section>
+            <h1>Further Reading</h1>
+            <article>
+                This is just a place holder. <br />
+                See the last chapter for explanations.
+            </article>
+            <aside>
+                No cigar, I'm afraid.
+            </aside>
+        </section>
+
+        <!--
+            FOUNDATIONS OF MODERN WEB DESIGN
+        -->
+        <section data-chapter data-background-image="https://picsum.photos/1600/900?image=1081">
+            <h1>Foundations of Modern Web Design</h1>
+            <slide-caption>
+                Now after you successfully completed the onboarding let's get our hands
+                dirty and jump start with modern web design. Of course this is still
+                a place holder chapter. See the next chapter of how to structure your
+                decks like this.
+            </slide-caption>
+        </section>
+
+        <section>
+            <h1>Introduction to HTML and CSS</h1>
+            <article>
+                This is just a place holder. <br />
+                See the last chapter for explanations.
+            </article>
+            <aside>
+                Still not there, sorry.
+            </aside>
+        </section>
+
+        <section>
+            <h1>Responsive Web Design Techniques</h1>
+            <article>
+                This is just a place holder. <br />
+                See the last chapter for explanations.
+            </article>
+            <aside>
+                Nope. But close, I promise!
+            </aside>
+        </section>
+
+        <section>
+            <h1>A Gentle Introduction to JavaScript</h1>
+            <article>
+                This is just a place holder. <br />
+                See the last chapter for explanations.
+            </article>
+            <aside>
+                Closer but not quite there, yet.
+            </aside>
+        </section>
+
+        <section>
+            <h1>Advanced JavaScript Topics</h1>
+            <article>
+                This is just a place holder. <br />
+                See the last chapter for explanations.
+            </article>
+            <aside>
+                One slide left before you have arrived.
+            </aside>
+        </section>
+
+        <!--
+        HOW TO APPLY TO YOUR OWN SLIDES
+        -->
+        <section data-chapter data-background-image="https://picsum.photos/1600/900?image=1081">
+            <h1>How to Apply to Your Own Slides</h1>
+            <slide-caption style="color: darkred">
+                Finally! This is it. Here you'll learn how easy it is to structure
+                your own slides like this.
+            </slide-caption>
+        </section>
+
+        <section>
+            <h1>Example Code</h1>
+            <slide-caption>
+                <ol>
+                    <li>Define Chapters</li>
+                    <li>Add More Captions</li>
+                    <li>Style Captions</li>
+                    <li>Things to Remember</li>
+                </ol>
+            </slide-caption>
+            <article>
+                <div style="margin-bottom: 1em;">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a
+                                id            = "example-chapter-slides-tab"
+                                class         = "nav-link active"
+                                data-toggle   = "tab"
+                                href          = "#example-chapter-slides"
+                                role          = "tab"
+                                aria-controls = "example-chapter-slides"
+                                aria-expanded = "true"
+                            >
+                                Define Chapters
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                id            = "example-adding-captions-tab"
+                                class         = "nav-link"
+                                data-toggle   = "tab"
+                                href          = "#example-adding-captions"
+                                role          = "tab"
+                                aria-controls = "example-adding-captions"
+                            >
+                                Add More Captions
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                id            = "example-styling-captions-tab"
+                                class         = "nav-link"
+                                data-toggle   = "tab"
+                                href          = "#example-styling-captions"
+                                role          = "tab"
+                                aria-controls = "example-styling-captions"
+                            >
+                                Style Captions
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content border border-top-0 bg-white" style="padding: 1em;">
+                        <!-- Defining a Chapter Slide -->
+                        <div
+                            class           = "tab-pane fade show active"
+                            id              = "example-chapter-slides"
+                            role            = "tabpanel"
+                            aria-labelledby = "example-chapter-slides-tab"
+                        >
+                            <source-code language="html">
+                                &lt;section data-chapter&gt;
+                                    &lt;slide-caption&gt;
+                                        This is the caption which will be shown on the Table of Contents
+                                        on the overview page.
+                                    &lt;/slide-caption&gt;
+                                    &lt;artice&gt;
+                                        Slide contant, as usual
+                                    &lt;/artice&gt;
+                                    &lt;aside&gt;
+                                        Side text, as usual
+                                    &lt;/aside&gt;
+                                &lt;/section&gt;
+                            </source-code>
+                        </div>
+                        <!-- Adding Captions to Any Slide -->
+                        <div
+                            class           = "tab-pane fade"
+                            id              = "example-adding-captions"
+                            role            = "tabpanel"
+                            aria-labelledby = "example-adding-captions-tab"
+                        >
+                            <source-code language="html">
+                                &lt;section&gt;
+                                    &lt;slide-caption&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;Define Chapters&lt;/li&gt;
+                                            &lt;li&gt;Add More Captions&lt;/li&gt;
+                                            &lt;li&gt;Style Captions&lt;/li&gt;
+                                            &lt;li&gt;Things to Remember&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/slide-caption&gt;
+                                    …
+                                &lt;/section&gt;
+                            </source-code>
+                        </div>
+                        <!-- Styling Captions -->
+                        <div
+                            class           = "tab-pane fade show"
+                            id              = "example-styling-captions"
+                            role            = "tabpanel"
+                            aria-labelledby = "example-styling-captions-tab"
+                        >
+                            <source-code language="html">
+                                &lt;section&gt;
+                                    &lt;slide-caption style="color:red" class="my-current-topic"&gt;
+                                        Apply any style or class to your captions if you like.
+                                    &lt;/slide-caption&gt;
+                                    …
+                                &lt;/section&gt;
+                            </source-code>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Things to Remember</h2>
+                <ul>
+                    <li>
+                        The <code>data-chapter</code> attributes marks a slide as a chapter slide
+                    </li>
+                    <li>
+                        All following slides will automatically be indented in the Table of Contents
+                    </li>
+                    <li>
+                        Slides may have a <src-code language="html">&lt;slide-caption&gt;</src-code> element
+                        with text for the Table of Contents
+                    </li>
+                    <li>
+                        <code>style</code> and <code>class</code> attributes can be used on the
+                        <src-code language="html">&lt;slide-caption&gt;</src-code>
+                    </li>
+                </ul>
+            </article>
+            <aside>
+                <p>
+                    Structuring a deck with chapters is really easy. Simply add a title slide for each
+                    chapter and mark the slide with the <code>data-chapter</code> attribute like this:
+                </p>
+                <source-code language="html">
+                    &lt;section data-chapter&gt;
+                        …
+                    &lt;/section&gt;
+                </source-code>
+                <p>
+                    This will automatically enable chapters in your deck and all subsequent slides will
+                    be contents of that chapter. Additionally you may add captions to the slides like this:
+                </p>
+                <source-code language="html">
+                    &lt;section data-chapter&gt;
+                        &lt;slide-caption&gt;
+                            Caption for the Table of Contents
+                        &lt;/slide-caption&gt;
+                        …
+                    &lt;/section&gt;
+                </source-code>
+                <p>
+                    Although this example has the caption on a chapter slide, any slide may have a caption.
+                    This enables you to build a comprehensive Table of Contents with introductory captions
+                    on the chapter titles and index entries on the chapter contents. Take this, for example:
+                </p>
+                <source-code language="html">
+                    &lt;section data-chapter&gt;
+                        &lt;h1&gt;Front Matter&lt;/h1&gt;
+                        &lt;slide-caption&gt;
+                            Welcome learners. Please take your time to read these
+                            introductory notes. If you got any questions please
+                            raise your hand during the first meetup.
+                        &lt;/slide-caption&gt;
+                        …
+                    &lt;/section&gt;
+
+                    &lt;section&gt;
+                        &lt;h1&gt;Syllabus&lt;/h1&gt;
+                        &lt;slide-caption&gt;
+                            &lt;ol&gt;
+                                &lt;li&gt;Course Content&lt;/li&gt;
+                                &lt;li&gt;Time Sheet&lt;/li&gt;
+                                &lt;li&gt;Office Hours and Contact&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/slide-caption&gt;
+                        …
+                    &lt;/section&gt;
+
+                    &lt;section&gt;
+                        &lt;h1&gt;Exercise Sheets&lt;/h1&gt;
+                        &lt;slide-caption&gt;
+                            &lt;ol&gt;
+                                &lt;li&gt;Introductory Exercises&lt;/li&gt;
+                                &lt;li&gt;HTML and CSS&lt;/li&gt;
+                                &lt;li&gt;Responsive Webdesign&lt;/li&gt;
+                                &lt;li&gt;JavaScript Basics&lt;/li&gt;
+                                &lt;li&gt;DOM Manipulation with JavaScript&lt;/li&gt;
+                                &lt;li&gt;AJAX and WebSockets&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/slide-caption&gt;
+                        …
+                    &lt;/section&gt;
+
+                    &lt;section data-chapter&gt;
+                        …
+                    &lt;/section&gt;
+                </source-code>
+
+                <p>
+                    Finally you can apply the <code>style</code> and <code>class</code>
+                    attributes if you like to style the captions:
+                </p>
+                <source-code language="html">
+                    &lt;section&gt;
+                        &lt;slide-caption style="color: red" class="my-current-topic"&gt;
+                            …
+                        &lt;/slide-caption&gt;
+                        …
+                    &lt;/section&gt;
+                </source-code>
+            </aside>
+        </section>
+    </body>
+</html>
