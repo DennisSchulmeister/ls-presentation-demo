@@ -47,7 +47,7 @@ Translations
 ------------
 
 This example is in English. If you want to translate the User Interface, simply
-edit the `index.js`. If is only a few strings.
+edit the `index.js`. It is only a few strings.
 
 Copyright
 ---------

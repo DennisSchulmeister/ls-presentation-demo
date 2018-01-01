@@ -15,6 +15,8 @@ Object.keys(process.env).forEach(env_var => {
     replace_values[env_var.slice(19)] = process.env[env_var];
 });
 
+shell.mkdir("-p", build_dir);
+
 shell.ls("-R", src_dir).forEach(file => {
     let src_path = path.join(src_dir, file);
     let dst_path = path.join(build_dir, file);
