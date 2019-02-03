@@ -8,7 +8,7 @@
 import SlideshowPlayer from "lecture-slides.js";
 
 import LsPluginHighlightJs from "ls-plugin-highlight.js";
-import "./node_modules/highlight.js/styles/atom-one-light.css";
+import "highlight.js/styles/atom-one-light.css";
 
 window.addEventListener("load", () => {
     let player = new SlideshowPlayer({
