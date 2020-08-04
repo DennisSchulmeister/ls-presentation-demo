@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Code Examples with Syntax Highlighting</title>
+
+        <link rel="shortcut icon" href="assets/favicon.svg" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="learning-slides.bundle.js"></script>
+    </head>
+    <body class="slides invisible" data-title="Additional HTML tags for easier authoring" tabindex="0">
+        <header>
+            <h2>Table of Contents</h2>
+            <p>
+                This presentation gives a quick overview of the additional HTML
+                tags offered by the <tt>ls-plugin-extra-tags</tt> plugin.
+            </p>
+        </header>
+
+        <section data-chapter data-background-image="http://lorempixel.com/output/animals-q-c-1024-768-3.jpg">
+            <h1 style="color: yellow">Additional HTML tags</h1>
+        </section>
+
+        <section>
+            <h1>Bootstrap Grid</h1>
+            <article>
+                <h2>Preview</h2>
+                <lsx-grid-fluid style="margin-bottom: 2em;">
+                    <lsx-row>
+                        <lsx-col size="md-3" class="p-0">
+                            <img src="https://picsum.photos/id/1002/600/400" class="d-block w-100 h-100" />
+                        </lsx-col>
+                        <lsx-col size="md-6" class="p-0">
+                            <img src="https://picsum.photos/id/1003/1200/400" class="d-block w-100 h-100" />
+                        </lsx-col>
+                        <lsx-col size="md-3" class="p-0">
+                            <img src="https://picsum.photos/id/1012/600/400" class="d-block w-100 h-100" />
+                        </lsx-col>
+                    </lsx-row>
+                    <lsx-row>
+                        <lsx-col size="md-6" class="p-0">
+                            <img src="https://picsum.photos/id/1015/1200/400" class="d-block w-100 h-100" />
+                        </lsx-col>
+                        <lsx-col size="md-3" class="p-0">
+                            <img src="https://picsum.photos/id/102/600/400" class="d-block w-100 h-100" />
+                        </lsx-col>
+                        <lsx-col size="md-3" class="p-0">
+                            <img src="https://picsum.photos/id/1026/600/400" class="d-block w-100 h-100" />
+                        </lsx-col>
+                    </lsx-row>
+                </lsx-grid-fluid>
+
+                <h2>Source Code</h2>
+                <source-code language="html">
+                    &lt;lsx-grid-fluid style="margin-bottom: 2em;"&gt;
+                        &lt;lsx-row&gt;
+                            &lt;lsx-col size="md-3" class="p-0"&gt;
+                                &lt;img src="https://picsum.photos/id/1002/600/400" class="d-block w-100 h-100" /&gt;
+                            &lt;/lsx-col&gt;
+                            &lt;lsx-col size="md-6" class="p-0"&gt;
+                                &lt;img src="https://picsum.photos/id/1003/1200/400" class="d-block w-100 h-100" /&gt;
+                            &lt;/lsx-col&gt;
+                            &lt;lsx-col size="md-3" class="p-0"&gt;
+                                &lt;img src="https://picsum.photos/id/1012/600/400" class="d-block w-100 h-100" /&gt;
+                            &lt;/lsx-col&gt;
+                        &lt;/lsx-row&gt;
+                        &lt;lsx-row&gt;
+                            &lt;lsx-col size="md-6" class="p-0"&gt;
+                                &lt;img src="https://picsum.photos/id/1015/1200/400" class="d-block w-100 h-100" /&gt;
+                            &lt;/lsx-col&gt;
+                            &lt;lsx-col size="md-3" class="p-0"&gt;
+                                &lt;img src="https://picsum.photos/id/102/600/400" class="d-block w-100 h-100" /&gt;
+                            &lt;/lsx-col&gt;
+                            &lt;lsx-col size="md-3" class="p-0"&gt;
+                                &lt;img src="https://picsum.photos/id/1026/600/400" class="d-block w-100 h-100" /&gt;
+                            &lt;/lsx-col&gt;
+                        &lt;/lsx-row&gt;
+                    &lt;/lsx-grid-fluid&gt;
+                </source-code>
+            </article>
+        </section>
+
+        <section>
+            <h1>Info Boxes</h1>
+            <article>
+                <lsx-info-box>
+                    Don't forget to check the README file of
+                    <a href="https://github.com/DennisSchulmeister/ls-plugin-extra-tags">ls-plugin-extra-tags</a>.
+                </lsx-info-box>
+
+                <lsx-info-box type="warning">
+                    Beware of the Tiger!
+                </lsx-info-box>
+
+                <lsx-info-box type="critical" title="Important Message">
+                    Don't forget to pay your taxes.
+                </lsx-info-box>
+            </article>
+            <aside>
+                <lsx-info-box>
+                    See the source code below.
+                </lsx-info-box>
+
+                <source-code language="html">
+                    &lt;lsx-info-box&gt;
+                        Don't forget to check the README file of
+                        &lt;a href="..."&gt;ls-plugin-extra-tags&lt;/a&gt;.
+                    &lt;/lsx-info-box&gt;
+
+                    &lt;lsx-info-box type="warning"&gt;
+                        Beware of the Tiger!
+                    &lt;/lsx-info-box&gt;
+
+                    &lt;lsx-info-box type="critical" title="Important Message"&gt;
+                        Don't forget to pay your taxes.
+                    &lt;/lsx-info-box&gt;
+                </source-code>
+            </aside>
+        </section>
+
+        <section>
+            <h1>Tab Pages</h1>
+            <article>
+                <lsx-tab-pages>
+                    <lsx-tab-page title="Starters">
+                        <p>
+                            Content of the first page …
+                        </p>
+                        <lsx-info-box>
+                            Also see our special menus!
+                        </lsx-info-box>
+                    </lsx-tab-page>
+                    <lsx-tab-page title="Main Dishes">
+                        Content of the second page …
+                    </lsx-tab-page>
+                    <lsx-tab-page title="Deserts">
+                        Content of the third page …
+                    </lsx-tab-page>
+                    <lsx-tab-page title="Drinks">
+                        Content of the fourth page …
+                    </lsx-tab-page>
+                </lsx-tab-pages>
+            </article>
+            <aside>
+                <source-code language="html">
+                    &lt;lsx-tab-pages&gt;
+                        &lt;lsx-tab-page title="Starters"&gt;
+                            &lt;p&gt;
+                                Content of the first page …
+                            &lt;/p&gt;
+                            &lt;lsx-info-box&gt;
+                                Also see our special menus!
+                            &lt;/lsx-info-box&gt;
+                        &lt;/lsx-tab-page&gt;
+                        &lt;lsx-tab-page title="Main Dishes"&gt;
+                            Content of the second page …
+                        &lt;/lsx-tab-page&gt;
+                        &lt;lsx-tab-page title="Deserts"&gt;
+                            Content of the third page …
+                        &lt;/lsx-tab-page&gt;
+                        &lt;lsx-tab-page title="Drinks"&gt;
+                            Content of the fourth page …
+                        &lt;/lsx-tab-page&gt;
+                    &lt;/lsx-tab-pages&gt;
+                </source-code>
+            </aside>
+        </section>
+
+        <section>
+            <h1>Carousel</h1>
+            <article>
+                <lsx-carousel>
+                    <lsx-carousel-page>
+                        <p>
+                            First page
+                        </p>
+                        <img class="active d-block" src="https://picsum.photos/id/106/640/480" style="max-width: 30em;" />
+                    </lsx-carousel-page>
+                    <lsx-carousel-page>
+                        <p>
+                            Second page
+                        </p>
+                        <img class="active d-block" src="https://picsum.photos/id/1062/640/480" style="max-width: 30em;" />
+                    </lsx-carousel-page>
+                    <lsx-carousel-page>
+                        <p>
+                            Final page
+                        </p>
+                        <img class="active d-block" src="https://picsum.photos/id/1071/640/480" style="max-width: 30em;" />
+                    </lsx-carousel-page>
+                </lsx-carousel>
+            </article>
+            <aside>
+                <source-code language="html">
+                    &lt;lsx-carousel&lt;
+                        &lt;lsx-carousel-page&lgt;
+                            &lt;p&gt;
+                                First page
+                            &lt;/p&gt;
+                            &lt;img class="active d-block" src="..." style="max-width: 30em;" /&gt;
+                        &lt;/lsx-carousel-page&gt;
+                        &lt;lsx-carousel-page&gt;
+                            &lt;p&gt;
+                                Second page
+                            &lt;/p&gt;
+                            &lt;img class="active d-block" src="..." style="max-width: 30em;" /&gt;
+                        &lt;/lsx-carousel-page&gt;
+                        &lt;lsx-carousel-page&gt;
+                            &lt;p&gt;
+                                Final page
+                            &lt;/p&gt;
+                            &lt;img class="active d-block" src="..." style="max-width: 30em;" /&gt;
+                        &lt;/lsx-carousel-page&gt;
+                    &lt;/lsx-carousel&gt;
+                </source-code>
+            </aside>
+        </section>
+
+        <section>
+            <h1>Youtube Video</h1>
+            <article>
+                <lsx-grid-fluid>
+                    <lsx-row style="margin-bottom: 1.5em;">
+                        <lsx-col>
+                            <lsx-youtube video="HERMqverQWM"></lsx-youtube>
+                        </lsx-col>
+                        <lsx-col>
+                            <lsx-youtube video="tzyYdpv_V3E"></lsx-youtube>
+                        </lsx-col>
+                    </lsx-row>
+                    <lsx-row>
+                        <lsx-col>
+                            <lsx-youtube video="Q7580888ce4"></lsx-youtube>
+                        </lsx-col>
+                        <lsx-col>
+                            <lsx-youtube video="1ehVuK55K-E"></lsx-youtube>
+                        </lsx-col>
+                    </lsx-row>
+                </lsx-grid-fluid>
+            </article>
+            <aside>
+                <source-code language="html">
+                    &lt;lsx-grid-fluid&gt;
+                        &lt;lsx-row style="margin-bottom: 1.5em;"&gt;
+                            &lt;lsx-col&gt;
+                                &lt;lsx-youtube video="HERMqverQWM"&gt;&lt;/lsx-youtube&gt;
+                            &lt;/lsx-col&gt;
+                            &lt;lsx-col&gt;
+                                &lt;lsx-youtube video="tzyYdpv_V3E"&gt;&lt;/lsx-youtube&gt;
+                            &lt;/lsx-col&gt;
+                        &lt;/lsx-row&gt;
+                        &lt;lsx-row&gt;
+                            &lt;lsx-col&gt;
+                                &lt;lsx-youtube video="Q7580888ce4"&gt;&lt;/lsx-youtube&gt;
+                            &lt;/lsx-col&gt;
+                            &lt;lsx-col&gt;
+                                &lt;lsx-youtube video="1ehVuK55K-E"&gt;&lt;/lsx-youtube&gt;
+                            &lt;/lsx-col&gt;
+                        &lt;/lsx-row&gt;
+                    &lt;/lsx-grid-fluid&gt;
+                </source-code>
+            </aside>
+        </section>
+
+        <section data-chapter>
+            <h1>Installation</h1>
+            <article>
+                <h2>Installation of the plugin</h2>
+                <ol style="margin-bottom: 2em;">
+                    <li>
+                        Install ls-plugin-extra-tags: <tt>$ npm add --save-dev ls-plugin-extra-tags</tt>
+                    </li>
+                    <li>Import it in the <tt>index.js</tt> file</li>
+                    <li>Use the HTML tags in your presentation</li>
+                </ol>
+
+                <h2>Example for index.js</h2>
+                <source-code language="javascript" filename="index.js">
+                    "use strict";
+
+                    import SlideshowPlayer from "lecture-slides.js";
+                    import LsPluginExtraTags from "ls-plugin-extra-tags";
+
+                    window.addEventListener("load", () => {
+                        let player = new SlideshowPlayer({
+                            plugins: {
+                                HighlightJs: new LsPluginExtraTags({
+                                    // These are the default texts. You can leave them out,
+                                    // if you don't want to change them.
+                                    labelCarouselNext: "Next Step",
+                                    labelCarouselPrev: "Previus Step",
+                                    labelCarouselReset: "Restart"
+                                }),
+                            }
+                        });
+
+                        player.start();
+                    });
+                </source-code>
+            </article>
+            <aside>
+                <p>
+                    Installation shouldn't be much of a problem if you already
+                    got the basic presentation template running. Once your
+                    presentation is working, simply follow the steps as outlined
+                    on this slide.
+                </p>
+                <p>
+                    Details on step four can be seen on the following slide.
+                </p>
+            </aside>
+        </section>
+    </body>
+</html>
