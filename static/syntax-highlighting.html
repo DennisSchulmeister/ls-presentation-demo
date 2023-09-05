@@ -6,8 +6,8 @@
         <title>Code Examples with Syntax Highlighting</title>
 
         <link rel="shortcut icon" href="assets/favicon.svg" />
-        <link rel="stylesheet" href="style.css" />
-        <script src="learning-slides.bundle.js"></script>
+        <link rel="stylesheet" href="../_bundle.css" />
+        <script src="../_bundle.js"></script>
     </head>
     <body class="slides invisible" data-title="Code Examples with Syntax Highlighting" tabindex="0">
         <header>
@@ -19,10 +19,7 @@
             </p>
         </header>
 
-        <section data-title="Cover Image" data-background-image="http://lorempixel.com/output/nature-q-c-1024-768-10.jpg">
-            <article>
-                <h1 style="color: yellow">Code Examples with Syntax Highlighting</h1>
-            </article>
+        <section data-title="Cover Image" data-background-image="https://picsum.photos/1600/900?image=1081">
         </section>
 
         <section>
@@ -82,14 +79,19 @@
                 </p>
                 <ol>
                     <li>
-                        Install ls-plugin-highlight.js: <tt>$ npm add --save-dev ls-plugin-highlight.js</tt>
+                        Install @dschulmeis/ls-plugin-highlight.js: <tt>$ npm add --save-dev @dschulmeis/ls-plugin-highlight.js</tt>
                     </li>
-                    <li>Import it in the <tt>index.js</tt> file</li>
+                    <li>
+                        Import it in the <tt>index.js</tt> file
+                    </li>
                     <li>
                         Import one of the
                         <a href="https://highlightjs.org/static/demo/">stylesheets that come with highlight.js</a>
+                        and all the languages you want to support.
                     </li>
-                    <li>Use the HTML tags below in your presentation</li>
+                    <li>
+                        Use the HTML tags below in your presentation
+                    </li>
                 </ol>
                 <p>
                     Example for <tt>index.js</tt>:
@@ -97,17 +99,35 @@
                 <source-code language="javascript" filename="index.js">
                     "use strict";
 
-                    import SlideshowPlayer from "lecture-slides.js";
-                    import LsPluginHighlightJs from "ls-plugin-highlight.js";
-                    import "./node_modules/highlight.js/styles/atom-one-light.css";
+                    import SlideshowPlayer from "@dschulmeis/lecture-slides.js";
 
+                    import LsPluginExtraTags from "@dschulmeis/ls-plugin-extra-tags";
+                    
+                    import LsPluginHighlightJs from "@dschulmeis/ls-plugin-highlight.js";
+                    import HLJS_Language_XML from 'highlight.js/lib/languages/xml';
+                    import HLJS_Language_JS from 'highlight.js/lib/languages/javascript';
+                    import HLJS_Language_PYTHON from 'highlight.js/lib/languages/python';
+                    import "highlight.js/styles/atom-one-light.css";
+                    
                     window.addEventListener("load", () => {
                         let player = new SlideshowPlayer({
+                            mode: "overview",
                             plugins: {
-                                HighlightJs: new LsPluginHighlightJs(),
+                                ExtraTags: new LsPluginExtraTags({
+                                    //labelCarouselNext: "Next Step",
+                                    //labelCarouselPrev: "Previous Step",
+                                    //labelCarouselReset: "Restart",
+                                }),
+                                HighlightJs: new LsPluginHighlightJs({
+                                    languages: {
+                                        html: HLJS_Language_XML,
+                                        javascript: HLJS_Language_JS,
+                                        python: HLJS_Language_PYTHON,
+                                    }
+                                }),
                             }
                         });
-
+                    
                         player.start();
                     });
                 </source-code>

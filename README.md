@@ -13,9 +13,16 @@ lives and run the following command:
 Each HTML file is a single presentation showcasing certain features or plugins.
 You can use the built-in web server to run the slides:
 
-    $ npm run devserver
+    $ npm run start
 
 This will run a web server, listening on http://localhost:8080
+
+Uploading to a Web Server
+-------------------------
+
+Once you are done, build a static version and upload it to any web server:
+
+    $ npm run build
 
 Copyright
 ---------
@@ -26,4 +33,4 @@ Copyright
 
 lecture-slides.js_ (https://www.github.com/DennisSchulmeister/lecture-slides.js) <br/>
 This template: (https://www.github.com/DennisSchulmeister/ls-presentation-demo) <br/>
-© 2017 – 2020 Dennis Schulmeister-Zimolong <dennis@pingu-mail.de>
+© 2017 – 2023 Dennis Schulmeister-Zimolong <dennis@pingu-mail.de>

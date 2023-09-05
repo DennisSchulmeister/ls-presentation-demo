@@ -5,11 +5,14 @@
  */
 "use strict";
 
-import SlideshowPlayer from "lecture-slides.js";
+import SlideshowPlayer from "@dschulmeis/lecture-slides.js";
 
-import LsPluginExtraTags from "ls-plugin-extra-tags";
+import LsPluginExtraTags from "@dschulmeis/ls-plugin-extra-tags";
 
-import LsPluginHighlightJs from "ls-plugin-highlight.js";
+import LsPluginHighlightJs from "@dschulmeis/ls-plugin-highlight.js";
+import HLJS_Language_XML from 'highlight.js/lib/languages/xml';
+import HLJS_Language_JS from 'highlight.js/lib/languages/javascript';
+import HLJS_Language_PYTHON from 'highlight.js/lib/languages/python';
 import "highlight.js/styles/atom-one-light.css";
 
 window.addEventListener("load", () => {
@@ -17,10 +20,16 @@ window.addEventListener("load", () => {
         plugins: {
             ExtraTags: new LsPluginExtraTags({
                 //labelCarouselNext: "Next Step",
-                //labelCarouselPrev: "Previus Step",
+                //labelCarouselPrev: "Previous Step",
                 //labelCarouselReset: "Restart",
             }),
-            HighlightJs: new LsPluginHighlightJs(),
+            HighlightJs: new LsPluginHighlightJs({
+                languages: {
+                    html: HLJS_Language_XML,
+                    javascript: HLJS_Language_JS,
+                    python: HLJS_Language_PYTHON,
+                }
+            }),
         }
     });
 
